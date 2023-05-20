@@ -9,32 +9,42 @@
 </head>
 <style>
     .back{
-        width: 100%;
-        height: 40px;
-        background-color: #a5d2d6;
+        width: calc(100%-2px);
+        height: 30px;
+        background-color: grey;
         display: flex;
+        justify-content: center;
         align-items: center;
-        
+        border: 1px solid black;
     }
     
+    .back:hover{
+        background-color: lightgrey;
+    }
     
     .paidetds {
         position: absolute;
         width: 100%;
-        height: 200px;
+        height: 250px;
         background-color: #80cad1;
         display: flex;
         flex-direction: column;
         bottom: 0;
         right: 0;
-        justify-content: space-around;
-        border: 3px solid black;
+        justify-content: space-between;
     }
 
     .direitos {
         /* height: 200px; */
         display: flex;
         justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .direitos >p{
+        margin: 0;
+        font-size: 13px;
+        font-weight: bold;
     }
 
     .localpai {
@@ -119,19 +129,22 @@
 
     }
 
+    
+
     footer>hr {
         width: 100%;
-        height: 2px;
+        height: 1px;
         background-color: black;
         border: none;
     }
 </style>
 
 <body>
-    <div class="back">
-        <b><p>Voltar ao Inicío</p></b>
-    </div>
     <footer class="paidetds">
+        <div class="back">
+            <b><p>Voltar ao Inicío</p></b>
+        </div>
+        <!-- <hr> -->
         <div class="itens">
             <div class="localpai">
                 <div class="local">
@@ -174,7 +187,7 @@
         </div>
         <hr>
         <div class="direitos">
-            <b><p style="margin: 0;font-size: 13px;">2021 Pendant © All Rights Reserved - Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso.</p></b>
+            <p>2021 Pendant © All Rights Reserved - Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso.</p>
         </div>
 </body>
 
